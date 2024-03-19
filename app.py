@@ -8,11 +8,12 @@ app = Flask(__name__)
 
 # Model names and paths (replace with your actual paths if different)
 model_choices = {
-    "modelx2": "C:/Users/MSI/Desktop/newupscale 2/models/models_modelx2.ort",
-    "modelx2_25_JXL": "C:/Users/MSI/Desktop/newupscale 2/models/models_modelx2 25 JXL.ort",
-    "modelx4": "C:/Users/MSI/Desktop/newupscale 2/models/models_modelx4.ort",
-    "minecraft_modelx4": "C:/Users/MSI/Desktop/newupscale 2/models/models_minecraft_modelx4.ort",
+    "modelx2": "models/models_modelx2.ort",
+    "modelx2_25_JXL": "models/models_modelx2 25 JXL.ort",
+    "modelx4": "models/models_modelx4.ort",
+    "minecraft_modelx4": "models/models_minecraft_modelx4.ort",
 }
+
 
 def pre_process(img: np.array) -> np.array:
     # Transpose image from HWC to CHW format and expand dimension for 4D input
